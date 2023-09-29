@@ -21,8 +21,10 @@ namespace BlazorApp_MVC.DataRepo
             _connectionString = connectionString;
         }
 
+        //TODO: change these to use generic T params
+
         /// <summary>
-        /// Gets an IEnumerable of athings from db via dapper call. Params empty. Returns list of athings
+        /// Gets an IEnumerable of books from db via dapper call. Params empty. Returns list of books
         /// </summary>
         /// <returns></returns>
         public async Task<IEnumerable<athing>> GetAthingsAsync()
@@ -46,7 +48,7 @@ namespace BlazorApp_MVC.DataRepo
         }
 
         /// <summary>
-        /// Get a thing by id from db via dapper call. Param id, Returns a thing
+        /// Get a book by id from db via dapper call. Param id, Returns a book
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>

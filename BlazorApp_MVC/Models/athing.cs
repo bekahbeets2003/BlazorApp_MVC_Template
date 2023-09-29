@@ -1,5 +1,6 @@
 ﻿namespace BlazorApp_MVC.Models
 {
+    //change this to book once db schema fully in place
     public class athing
     {
         public int file_id { get; set; }
